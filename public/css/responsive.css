@@ -1,0 +1,347 @@
+@media screen and (max-height: 570px) {
+    footer .fixed-content {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    /* ------ Header ------ */
+    nav ul li {
+        padding: 0 10px;
+    }
+
+    /* ------ Flash ------ */
+    .flash h1 {
+        font-size: 36px;
+    }
+    .flash p {
+        font-size: 14px;
+    }
+    
+    /* ------ Book Online ------ */
+    .book-online input {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1199px) {
+
+    /* ------ Header ------ */
+    nav ul li {
+        padding: 0 9px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+    nav .socials a {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    nav .socials a i {
+        line-height: 30px;
+    }
+
+    /* ------ Flash ------ */    
+    .flash .slide-left {
+        text-align: center;
+    }
+    .flash .slide-left h1,
+    .flash .slide-left p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flash .carousel-indicators {
+        margin: 0 auto !important;
+    }
+
+        /* ------ Book-Online ------ */
+        .book-online .text {
+            text-align: center;
+        }
+        .book-online .text h2,
+        .book-online .text p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .book-online .text .separator {
+            margin: 30px auto;
+        }
+        .book-online input {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .book-online a.button {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ------ Therapists Wanted ------ */
+        .wanted-parallax .text {
+            text-align: center;
+        }
+        .wanted-parallax .text h2,
+        .wanted-parallax .text p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .wanted-parallax .text .separator {
+            margin: 30px auto;
+        }
+        .wanted-parallax input {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .wanted-parallax a.button {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ------ popup ------ */
+        .corp-img,
+        .corp-description {
+            height: 50%;
+        }
+        .corp-description {
+            padding: 5% 10%;
+        }
+        .corp-description p {
+            max-height: 32vh;
+        }
+
+        @media screen and (max-height: 800px) {
+            .corp-description p {
+                max-height: 22vh;
+            }
+        }
+
+        @media screen and (max-height: 380px) {
+            .corp-img {
+                display: none;
+            }
+            .corp-description p {
+                max-height: 60vh;
+            }
+        }
+
+}
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    /* ------ Therapists ------ */
+    .therapist .cta .button {
+        width: 200px;
+    }
+
+    /* ------ Branches ------ */
+    .panel {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    /* ------ Contact ------ */
+    .contact h2,
+    .contact p {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact .left-content {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .contact .left-content .separator {
+        margin: 30px auto;
+    }
+    .contact-form form {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .contact-form form button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* ------ Footer ------ */
+    footer p.socials {
+        font-size: 12px;
+    }
+    footer div.socials {
+        margin-left: 5px;
+      }
+
+}
+@media screen and (max-width: 767px) {
+
+    /* ------ Features ------ */
+    .feature {
+        margin-bottom: 50px;
+    }
+    .feature:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ------ Therapies ------ */
+    .therapies-cards {
+        margin-top: 370px;
+    }
+    
+    /* ------ Facilities ------ */
+    .item {
+        padding: 3px 15px;
+    }
+    .item .item-image {
+        height: 250px;
+    }
+
+    /* ------ Branches ------ */
+    .branches .map {
+        height: 400px;
+    }
+
+    /* ------ Footer ------ */
+    .footer-columns {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .column {
+        border-bottom: 1px solid #cecece;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    .column:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    footer p.socials {
+        font-size: 14px;
+    }
+
+    @media screen and (max-height: 870px) {
+        footer .fixed-content {
+            position: relative;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+
+    /* ------ Flash ------ */
+    .cta .button-primary {
+        margin-bottom: 10px;
+    }
+
+    /* ------ Therapies ------ */
+    .book-online {
+        background: #bf1e2d;
+    }
+
+    /* ------ Therapies ------ */
+    .therapies-parallax {
+        background: none;
+    }
+    .therapies-cards {
+        margin-top: 370px;
+    }
+    .card-text h4 {
+        font-size: 1.2em;
+    }
+    .card-text p {
+        line-height: 1.5em;
+    }
+
+    /* ------ Corporate On-site ------ */
+    .on-site-parallax {
+        background: #fff;
+    }
+    .corporate-on-site-gallery {
+        margin-top: 350px;
+    }
+    .item {
+        padding: 3px 15px;
+    }
+    .corporate-on-site .email {
+        margin-top: 60px;
+        padding: 50px 15px;
+    }
+    .corporate-on-site input {
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid #bf1e2d;
+    }
+
+    /* ------ Wanted ------ */
+    .wanted-parallax .text h2,
+    .wanted-parallax .text p {
+        text-align: center;
+        width: 100%;
+    }
+    .wanted-parallax .separator {
+        margin: 30px auto;
+    }
+    .wanted-parallax .wanted-button input,
+    .wanted-parallax .wanted-button a {
+        display: block;
+        margin: auto;
+
+    }
+    .wanted-parallax .wanted-button input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* ------ Features ------ */
+    .feature p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* ------ Reviews ------ */    
+    .reviews {
+        background: #bf1e2d;
+    }
+
+    /* ------ Copyright ------ */
+    .copyright p,
+    .copyright a {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 450px) {
+
+    /* ------ Flash ------ */
+    .flash .slide-left h1 {
+        margin-top: 60px;
+    }
+    #flash-slider .arrow-prev {
+        left: 10px;
+    }
+    #flash-slider .arrow-next {
+        left: 30px;
+    }
+
+    /* ------ Reviews ------ */
+    .reviews .text h1 {
+        font-size: 24px;
+    }
+    .reviews .text p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        }
+    .reviews .text .separator {
+        margin-bottom: 30px;
+    }
+    .reviews p.text-quote {
+        margin-bottom: 30px;
+    }
+    .reviews p.text-quote-by {
+        text-align: center !important;
+        margin-bottom: 0;
+    }
+
+}
