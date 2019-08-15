@@ -582,7 +582,10 @@ li.socials {
 }
 .therapy-card .card-text {
     bottom: 0;
-    padding: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
 }
 .card-text p {
     font-size: 12px;
@@ -1103,6 +1106,7 @@ transition: all .5s ease;
     background-size: cover;
     background-position: top center;
 }
+.wantedForm p,
 .wanted-parallax .text h2,
 .wanted-parallax .text p {
     color: #fff;
@@ -1153,18 +1157,18 @@ transition: all .5s ease;
    .contact .info p {
      font-size: 14px;
    }
-   .contact-form .form input,
-   .contact-form .form textarea {
+   .contact-form form input,
+   .contact-form form textarea {
      width: 100%;
      margin-bottom: 20px;
    }
-   .contact-form .form textarea {
+   .contact-form form textarea {
      height: 165px;
    }
-   .contact-form .form button {
+   .contact-form form button {
      cursor: pointer;
    }
-   .contact-form .form button:hover {
+   .contact-form form button:hover {
      color: #003641;
    }
 
@@ -1304,7 +1308,7 @@ footer {
   .privacy-description  h5 {
     color: #6e6e6e;
   }
-  .privacy-description ol, {}
+  /* .privacy-description ol, {} */
   .privacy-description li {
       margin-bottom: 1em;
     }

@@ -133,6 +133,14 @@
         font-size: 30px;
     }
 
+    /* ------ Therapies ------ */
+    .therapy-card .card-text {
+        padding-top: 40px;
+        padding-right: 22px;
+        padding-bottom: 40px;
+        padding-left: 22px;
+    }
+
     /* ------ Therapists ------ */
     .therapist .cta .button {
         width: 200px;
@@ -186,9 +194,9 @@
         margin-bottom: 0;
     }
 
-    /* ------ Therapies ------ */
+    ------ Therapies ------
     .therapies-cards {
-        margin-top: 370px;
+        margin-top: 580px;
     }
     
     /* ------ Facilities ------ */
@@ -204,6 +212,11 @@
         height: 400px;
     }
 
+    /* ------ Corporate Onsite ------ */
+    .corporate-on-site-gallery .overlay-bottom {
+        display: none;
+    }
+    
     /* ------ Footer ------ */
     .footer-columns {
         padding-top: 90px;
@@ -236,7 +249,7 @@
         margin-bottom: 10px;
     }
 
-    /* ------ Therapies ------ */
+    /* ------ Book Online ------ */
     .book-online {
         background: #bf1e2d;
     }
@@ -246,13 +259,13 @@
         background: none;
     }
     .therapies-cards {
-        margin-top: 370px;
+        margin-top: 350px;
     }
     .card-text h4 {
         font-size: 1.2em;
     }
     .card-text p {
-        line-height: 1.5em;
+        line-height: 1.4em;
     }
 
     /* ------ Corporate On-site ------ */
@@ -325,6 +338,11 @@
         left: 30px;
     }
 
+    /* ------ Therapies ------ */
+    .therapies-cards {
+        margin-top: 400px;
+    }
+
     /* ------ Reviews ------ */
     .reviews .text h1 {
         font-size: 24px;
@@ -344,4 +362,10 @@
         margin-bottom: 0;
     }
 
+}
+@media screen and (max-width: 390px) {
+    /* ------ Therapies ------ */
+    .therapies-cards {
+        margin-top: 485px;
+    }
 }
