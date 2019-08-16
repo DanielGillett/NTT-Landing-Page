@@ -22,7 +22,7 @@ router.post('/corporate', function (req, res, next) {
 });
 
 router.post('/wanted', function (req, res, next) {
-
+  console.log(req.body);
   const email = req.body.email;
   nodemailer({
     from: '"Nico Tailored Therapies" <info@nicotailoredtherapies.co.uk',

@@ -12,6 +12,7 @@
   <title>Nico Tailored Therapies</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/cookies-eu-banner.default.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
@@ -29,7 +30,6 @@
 
   <div id="cookies-eu-banner" style="display: none;">
     By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.
-    <a href="./read-more.html" id="cookies-eu-more">Read more</a>
     <button id="cookies-eu-reject">Reject</button>
     <button id="cookies-eu-accept">Accept</button>
   </div>
@@ -789,7 +789,7 @@
               <div class="wanted-button">
                 <div class="email wow lightSpeedIn" data-wow-duration="2s">
                   <form class="wantedForm" id="wantedForm">
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" id="wantedEmail" placeholder="Your Email" required>
                     <button class="button button-primary wantedButton">Leave Us Your Email</button>
                   </form>
                 </div>
@@ -871,7 +871,7 @@
           <form class="contactForm" id="contactForm">
             <input type="text" name="first" placeholder="First Name" required>
             <input type="text" name="last" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="email" id="contactEmail" placeholder="Email" required>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <button type="submit" class="button button-white-outline-primary contactButton">Submit</button>
           </form>
@@ -1407,7 +1407,7 @@
   </div>
 
 
-  <script src="cookies-eu-banner/dist/cookies-eu-banner.min.js"></script>
+  <script src="js/cookies-eu-banner.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>

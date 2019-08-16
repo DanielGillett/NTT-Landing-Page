@@ -32,7 +32,7 @@ $(document).ready(function () {
             var data = {
                 email: $('#corporateForm input').val()
             }
-            ajaxPost('#corporateForm', data, `<p>Thank you your interest in our on-site program.  We will get back to you shortly at <strong>${data.email}</strong>!</p>`);
+            ajaxPost('#corporateForm', '/corporate', data, `<p>Thank you your interest in our on-site program.  We will get back to you shortly at <strong>${data.email}</strong></p>`);
         });
     });
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
                 email: $('#wantedForm input').val()
             }
 
-            ajaxPost('#wantedForm', data, `<p>Thank you for your email address.  We will get back to you shortly.  <strong>${data.email}</strong></p>`)
+            ajaxPost('#wantedForm', '/wanted', data, `<p>Thank you for your email address.  We will get back to you shortly at  <strong>${data.email}</strong></p>`)
         });
     });
 
@@ -57,11 +57,11 @@ $(document).ready(function () {
             var data = {
                 first:$('#contactForm input:text[name="first"]').val(),
                 last: $('#contactForm input:text[name="last"]').val(),
-                email:$('#contactForm input:text[name="email"]').val(),
+                email:$('#contactForm #contactEmail').val(),
                 message:$('#contactForm textarea').val() 
             }
             
-            ajaxPost('#contactForm', data, `<p>Thank you for contacting us.  Someone will get back to you as soon as possible.</p>`)
+            ajaxPost('#contactForm','/contact', data, `<p>Thank you for contacting us.  Someone will get back to you as soon as possible.</p>`)
         });
     })
 
@@ -86,18 +86,17 @@ $(document).ready(function () {
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
  
-        // Don't forget to put your own UA-XXXXXXXX-X code
         ga('create', 'UA-23328752-1', 'auto');
         ga('send', 'pageview');
     });
 
 });
 
-function ajaxPost(formName, formData, message) {
+function ajaxPost(formName,url, formData, message) {
 
     $.ajax({
         type: 'POST',
-        url: '/contact',
+        url: url,
         dataType: 'json',
         data: JSON.stringify(formData),
         contentType: 'application/json',
@@ -106,7 +105,7 @@ function ajaxPost(formName, formData, message) {
         success: (data, textStatus) => $(formName).html(message),
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             if (textStatus == 'timeout') console.log('Timeout');
-            else if (textStatus == 'error') console.log('Error: ', errorThrown);
+            else if (textStatus == 'error') console.log('Ajax Error: ', errorThrown);
             else console.log('Unknown Ajax Error')
         },
         complete: (data) => console.log('Ajax Process Complete')
