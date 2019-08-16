@@ -1,6 +1,7 @@
-const logger = require('morgan');
+"use strict";
 
-module.exports = function(app) {
-    app.use(logger('dev'));
-}
+var logger = require('morgan');
 
+module.exports = function (app) {
+  app.use(logger('dev'));
+};

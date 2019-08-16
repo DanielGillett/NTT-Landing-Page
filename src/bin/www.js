@@ -1,12 +1,12 @@
-#!/usr/bin/env node
-
+// bin/www.js
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('nttwebsite:server');
-var http = require('http');
+const app = require('../app');
+const debugLib = require('debug');
+const http = require( 'http');
+const debug = debugLib('nttwebsite:server');
 
 /**
  * Get port from environment and store in Express.

@@ -27,42 +27,41 @@ $(document).ready(function () {
     }
 
     $('button.corporateButton').click(() => {
-        $('form.corporateForm').submit(function (event) {
-            event.preventDefault();
-            var data = {
-                email: $('#corporateForm input').val()
-            }
-            ajaxPost('#corporateForm', '/corporate', data, `<p>Thank you your interest in our on-site program.  We will get back to you shortly at <strong>${data.email}</strong></p>`);
-        });
+
+        event.preventDefault();
+        
+        var data = {
+            email: $('#corporateForm input').val()
+        }
+        ajaxPost('#corporateForm', '/corporate', data, `<p>Thank you your interest in our on-site program.  We will get back to you shortly at <strong>${data.email}</strong></p>`);
+
     });
 
     $('button.wantedButton').click(() => {
 
-        $('form.wantedForm').submit(function (event) {
-            event.preventDefault();
-            var data = {
-                email: $('#wantedForm input').val()
-            }
+        event.preventDefault();
 
-            ajaxPost('#wantedForm', '/wanted', data, `<p>Thank you for your email address.  We will get back to you shortly at  <strong>${data.email}</strong></p>`)
-        });
+        var data = {
+            email: $('#wantedForm input').val()
+        }
+
+        ajaxPost('#wantedForm', '/wanted', data, `<p>Thank you for your email address.  We will get back to you shortly at  <strong>${data.email}</strong></p>`)
+
     });
 
     $('button.contactButton').click(() => {
-        $('form.contactForm').submit(function (event) {
 
-            // don't seem to be getting all of the data
-            // email and message are not coming through.
-            event.preventDefault();
-            var data = {
-                first:$('#contactForm input:text[name="first"]').val(),
-                last: $('#contactForm input:text[name="last"]').val(),
-                email:$('#contactForm #contactEmail').val(),
-                message:$('#contactForm textarea').val() 
-            }
-            
-            ajaxPost('#contactForm','/contact', data, `<p>Thank you for contacting us.  Someone will get back to you as soon as possible.</p>`)
-        });
+        event.preventDefault();
+
+        var data = {
+            first: $('#contactForm input:text[name="first"]').val(),
+            last: $('#contactForm input:text[name="last"]').val(),
+            email: $('#contactForm #contactEmail').val(),
+            message: $('#contactForm textarea').val()
+        }
+
+        ajaxPost('#contactForm', '/contact', data, `<p>Thank you for contacting us.  Someone will get back to you as soon as possible.</p>`)
+
     })
 
     mapResize();
@@ -81,18 +80,20 @@ $(document).ready(function () {
     }).init();
 
     new CookiesEuBanner(function () {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
- 
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
         ga('create', 'UA-23328752-1', 'auto');
         ga('send', 'pageview');
     });
 
 });
 
-function ajaxPost(formName,url, formData, message) {
+function ajaxPost(formName, url, formData, message) {
 
     $.ajax({
         type: 'POST',
