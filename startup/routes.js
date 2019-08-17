@@ -1,15 +1,11 @@
 "use strict";
 
 //const express = require('express');
-var helmet = require('helmet');
-
-var bodyParser = require('body-parser');
-
-var cookieParser = require('cookie-parser');
-
-var index = require('../src/routes/index');
-
-var error = require('../middleware/error');
+const helmet = require('helmet');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const index = require('../src/routes/index');
+const error = require('../middleware/error');
 
 module.exports = function (app) {
   app.set('view engine', 'ejs');

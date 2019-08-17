@@ -1,14 +1,19 @@
+const config = require('config');
 const nodemailer = require('nodemailer');
 
 module.exports = async function (message) {
 
+console.log(config.get('mail.host'));
+console.log(config.get('mail.auth.user'));
+console.log(config.get('mail.auth.pass'));
+
     let transporter = nodemailer.createTransport({
-        host: "mail.nicotailoredtherapies.co.uk",
+        host: config.get('mail.host'),
         port: 587,
         secure: false,
         auth: {
-            user: "daniel@nicotailoredtherapies.co.uk",
-            pass: "nico1-daniel"
+            user: config.get('mail.auth.user'),
+            pass: config.get('mail.auth.pass')
         },
         tls: {
             rejectUnauthorized: false

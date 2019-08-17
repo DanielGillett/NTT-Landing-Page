@@ -1,0 +1,10 @@
+{
+    "name": "Ntt App - Development",
+    "mail": {
+        "host":"dev-mail-server",
+        "auth": {
+            "user": "dev-email-user",
+            "pass": "dev-email-pass"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Ntt App - Production",
+    "mail": {
+        "host":"prod-mail-server",
+        "auth": {
+            "user": "prod-email-user",
+            "pass": "prod-email-pass"
+        }
+    }
+}
